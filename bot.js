@@ -118,7 +118,7 @@ client.on('guildMemberAdd', async member => {
 	const canvas = Canvas.createCanvas(700, 250);
 	const ctx = canvas.getContext('2d');
 
-	const background = await Canvas.loadImage('./medya/manzara.png');
+	const background = await Canvas.loadImage('./medya/images.png');
 	ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
 	ctx.strokeStyle = '#00ff43';
@@ -126,7 +126,7 @@ client.on('guildMemberAdd', async member => {
 
 	ctx.font = '28px sans-serif';
 	ctx.fillStyle = '#00ff43';
-	ctx.fillText('HOŞ GELDİN', canvas.width / 2.5, canvas.height / 3.5);
+	ctx.fillText('Sunucumuza Hoş Geldin', canvas.width / 2.5, canvas.height / 3.5);
 
 	ctx.font = applyText(canvas, `${member.user.username}!`);
 	ctx.fillStyle = '#e9ff00';
@@ -154,7 +154,7 @@ client.on("guildMemberRemove", async member => {
 	const canvas = Canvas.createCanvas(700, 250);
 	const ctx = canvas.getContext('2d');
 
-	const background = await Canvas.loadImage('./medya/manzara.png');
+	const background = await Canvas.loadImage('./medya/images.png');
 	ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
 	ctx.strokeStyle = '#ff0000';
@@ -162,7 +162,7 @@ client.on("guildMemberRemove", async member => {
 
 	ctx.font = '28px sans-serif';
 	ctx.fillStyle = '#ff0000';
-	ctx.fillText('GÜLE GÜLE', canvas.width / 2.5, canvas.height / 3.5);
+	ctx.fillText('Sunucudan Ayrıldı', canvas.width / 2.5, canvas.height / 3.5);
 
 	ctx.font = applyText(canvas, `${member.user.username}!`);
 	ctx.fillStyle = '#e9ff00';
