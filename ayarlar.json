@@ -1,7 +1,7 @@
 {
     "prefix": "r!",
     "botismi": "Rakipsiz",
-    "token": "NTAzNTU2MjU1MTEwMDA0NzY3.Dq4Q_A.4N6GXWjU3YMS6ADjWSAebxxBAkk",
+    "token": "process.env.BOT_TOKEN",
     "gelistirici": "274551537139712001",
     "telif": "©2018 | Rakipsiz®️",
     "basarili": "<:basarili:478214442899734529>",
