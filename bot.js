@@ -118,7 +118,7 @@ client.on('guildMemberAdd', async member => {
 	const canvas = Canvas.createCanvas(700, 250);
 	const ctx = canvas.getContext('2d');
 
-	const background = await Canvas.loadImage('./medya/hosgeldin-gulegule/manzara.png');
+	const background = await Canvas.loadImage('./medya/manzara.png');
 	ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
 	ctx.strokeStyle = '#00ff43';
@@ -154,7 +154,7 @@ client.on("guildMemberRemove", async member => {
 	const canvas = Canvas.createCanvas(700, 250);
 	const ctx = canvas.getContext('2d');
 
-	const background = await Canvas.loadImage('./medya/hosgeldin-gulegule/manzara.png');
+	const background = await Canvas.loadImage('./medya/manzara.png');
 	ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
 	ctx.strokeStyle = '#ff0000';
